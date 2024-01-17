@@ -18,6 +18,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// 순수 jdbc를 위해 추가한 라이브러리
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc' // 추가
+	runtimeOnly 'com.h2database:h2' // 추가
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
