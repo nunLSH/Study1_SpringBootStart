@@ -23,6 +23,8 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        // memberService 프록시를 실제 확인하기 위한 코드 추가
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     /*
